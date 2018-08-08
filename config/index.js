@@ -10,11 +10,27 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        // '/api': {
+        //     // target: "https://test-cloud-hospital.rubikstack.com/",
+        //     target: "https://test-follow-up.rubikstack.com/",
+        //     changeOrigin: true,
+        //     pathRewrite: {
+        //         "^/api": ""
+        //     },
+        //     secure: false,
+        //     headers: {
+        //         // "Host": "test-cloud-hospital.rubikstack.com:443",
+        //         // "Referer": "https://test-cloud-hospital.rubikstack.com"
+        //         "Host": "test-follow-up.rubikstack.com:443",
+        //         "Referer": "https://test-follow-up.rubikstack.com"
+        //     }
+        // }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    port: 8000, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
